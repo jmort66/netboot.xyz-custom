@@ -18,8 +18,8 @@ goto ${custom_choice}
 goto custom_exit
 
 :option_one
-kernel http://path.to/vmlinuz
-initrd http://10.0.77.68:8080/xcp-ng/xcp-ng-8.3.0-20250606-netinstall.iso
+kernel http://10.0.77.68:8080/xcp-ng/8_3/vmlinuz
+initrd http://10.0.77.68:8080/xcp-ng/8_3/install.img
 imgargs vmlinuz put_kernel_img_args_here
 boot || goto custom_exit
 
